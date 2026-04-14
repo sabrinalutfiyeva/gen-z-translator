@@ -24,7 +24,7 @@ async function translate(systemPrompt, userText) {
       "anthropic-dangerous-direct-browser-access": "true",
     },
     body: JSON.stringify({
-      model: "claude-3-5-haiku-20241022",
+      model: "claude-haiku-4-5",
       max_tokens: 1024,
       system: systemPrompt,
       messages: [{ role: "user", content: userText }],
